@@ -1,0 +1,185 @@
+{
+    "version": 1,
+    "categories": [
+        {
+            "id": "moderation_core",
+            "label": "Moderation",
+            "icon": "🛡️",
+            "settings": {
+                "bot_prefix": { "label": "Bot Prefix", "type": "text", "enabled": true, "value": "!" },
+                "bot_status_type": { "label": "Bot Status Type", "type": "text", "enabled": true, "value": "PLAYING" },
+                "bot_status_text": { "label": "Bot Status Text", "type": "text", "enabled": true, "value": "OnlyGg Pro System" },
+                "bot_avatar_url": { "label": "Bot Avatar URL (reference)", "type": "text", "enabled": true, "value": "" },
+                "ban": { "label": "Ban", "type": "modal", "enabled": true, "value": "ban", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "unban": { "label": "Unban", "type": "modal", "enabled": true, "value": "unban", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "kick": { "label": "Kick", "type": "modal", "enabled": true, "value": "kick", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "mute": { "label": "Mute/Timeout", "type": "modal", "enabled": true, "value": "mute", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "unmute": { "label": "Unmute", "type": "modal", "enabled": true, "value": "unmute", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "warn": { "label": "Warn", "type": "modal", "enabled": true, "value": "warn", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "warnings": { "label": "Warnings List", "type": "modal", "enabled": true, "value": "warnings", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "unwarn": { "label": "Remove Last Warning", "type": "modal", "enabled": true, "value": "unwarn", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "clearwarns": { "label": "Clear All Warnings", "type": "modal", "enabled": true, "value": "clearwarns", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "clear": { "label": "Clear Messages", "type": "modal", "enabled": true, "value": "clear", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "lock": { "label": "Lock Channel", "type": "modal", "enabled": true, "value": "lock", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "unlock": { "label": "Unlock Channel", "type": "modal", "enabled": true, "value": "unlock", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "slowmode": { "label": "Slowmode", "type": "modal", "enabled": true, "value": "slowmode", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] }
+            }
+        },
+        {
+            "id": "automod",
+            "label": "AutoMod",
+            "icon": "🤖",
+            "settings": {
+                "automod_enabled": { "label": "AutoMod Enabled", "type": "toggle", "enabled": true, "value": true },
+                "block_links": { "label": "Block Links", "type": "toggle", "enabled": true, "value": false },
+                "anti_spam": { "label": "Anti Spam", "type": "toggle", "enabled": true, "value": false },
+                "anti_caps": { "label": "Anti Caps", "type": "toggle", "enabled": true, "value": false },
+                "anti_mentions": { "label": "Anti Mention Spam", "type": "toggle", "enabled": true, "value": false },
+                "max_mentions": { "label": "Max Mentions", "type": "text", "enabled": true, "value": "5" },
+                "anti_spam_messages": { "label": "Spam Messages Limit", "type": "text", "enabled": true, "value": "5" },
+                "anti_spam_window_sec": { "label": "Spam Window Seconds", "type": "text", "enabled": true, "value": "6" },
+                "anti_spam_timeout_sec": { "label": "Spam Timeout Seconds", "type": "text", "enabled": true, "value": "60" },
+                "banned_words": { "label": "Banned Words (comma)", "type": "text", "enabled": true, "value": "" },
+                "log_channel": { "label": "Logs Channel", "type": "select_channel", "enabled": true, "value": "" }
+            }
+        },
+        {
+            "id": "levels_profile",
+            "label": "Levels & Profile",
+            "icon": "📈",
+            "settings": {
+                "levels_enabled": { "label": "Levels Enabled", "type": "toggle", "enabled": true, "value": true },
+                "xp_min": { "label": "XP Min Per Message", "type": "text", "enabled": true, "value": "10" },
+                "xp_max": { "label": "XP Max Per Message", "type": "text", "enabled": true, "value": "20" },
+                "xp_cooldown_sec": { "label": "XP Cooldown Seconds", "type": "text", "enabled": true, "value": "20" },
+                "voice_xp_enabled": { "label": "Voice XP Enabled", "type": "toggle", "enabled": true, "value": true },
+                "voice_xp_per_min": { "label": "Voice XP Per Minute", "type": "text", "enabled": true, "value": "8" },
+                "voice_xp_min_users": { "label": "Voice Min Users In Channel", "type": "text", "enabled": true, "value": "2" },
+                "rank_command": { "label": "Rank Command", "type": "text", "enabled": true, "value": "rank" },
+                "top_command": { "label": "Top Command", "type": "text", "enabled": true, "value": "top" }
+            }
+        },
+        {
+            "id": "welcome",
+            "label": "Welcome",
+            "icon": "👋",
+            "settings": {
+                "welcome_enabled": { "label": "Enable Welcome", "type": "toggle", "enabled": true, "value": false },
+                "welcome_channel": { "label": "Welcome Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "welcome_send_text": { "label": "Send Text Message", "type": "toggle", "enabled": true, "value": true },
+                "welcome_text_channel": { "label": "Text Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "welcome_send_image": { "label": "Send Welcome Image", "type": "toggle", "enabled": true, "value": true },
+                "welcome_image_channel": { "label": "Image Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "welcome_message": { "label": "Welcome Message", "type": "text", "enabled": true, "value": "Welcome {user} to {server}!" },
+                "welcome_image_caption": { "label": "Image Caption", "type": "text", "enabled": true, "value": "نورت السيرفر يا {user} 💙" },
+                "welcome_bg_url": { "label": "Background Image URL (top4top)", "type": "text", "enabled": true, "value": "" },
+                "welcome_canvas_width": { "label": "Canvas Width", "type": "text", "enabled": true, "value": "1000" },
+                "welcome_canvas_height": { "label": "Canvas Height", "type": "text", "enabled": true, "value": "360" },
+                "welcome_text_x": { "label": "Text X", "type": "text", "enabled": true, "value": "320" },
+                "welcome_text_y": { "label": "Text Y", "type": "text", "enabled": true, "value": "170" },
+                "welcome_text_size": { "label": "Text Size", "type": "text", "enabled": true, "value": "46" },
+                "welcome_text_color": { "label": "Text Color (#ffffff)", "type": "text", "enabled": true, "value": "#ffffff" },
+                "welcome_subtext": { "label": "Sub Text", "type": "text", "enabled": true, "value": "Member #{count}" },
+                "welcome_subtext_size": { "label": "Sub Text Size", "type": "text", "enabled": true, "value": "28" },
+                "welcome_subtext_color": { "label": "Sub Text Color", "type": "text", "enabled": true, "value": "#cfd8ff" },
+                "welcome_avatar_enabled": { "label": "Show Avatar", "type": "toggle", "enabled": true, "value": true },
+                "welcome_avatar_x": { "label": "Avatar X", "type": "text", "enabled": true, "value": "120" },
+                "welcome_avatar_y": { "label": "Avatar Y", "type": "text", "enabled": true, "value": "100" },
+                "welcome_avatar_size": { "label": "Avatar Size", "type": "text", "enabled": true, "value": "140" }
+            }
+        },
+        {
+            "id": "utility",
+            "label": "Utility",
+            "icon": "🧰",
+            "settings": {
+                "help": { "label": "Help Command", "type": "modal", "enabled": true, "value": "help", "allowedRoles": [], "allowedChannels": [], "shortcuts": ["commands"] },
+                "userinfo": { "label": "UserInfo Command", "type": "modal", "enabled": true, "value": "userinfo", "allowedRoles": [], "allowedChannels": [], "shortcuts": ["uinfo"] },
+                "serverinfo": { "label": "ServerInfo Command", "type": "modal", "enabled": true, "value": "serverinfo", "allowedRoles": [], "allowedChannels": [], "shortcuts": ["sinfo"] },
+                "avatar": { "label": "Avatar Command", "type": "modal", "enabled": true, "value": "avatar", "allowedRoles": [], "allowedChannels": [], "shortcuts": ["av"] }
+            }
+        },
+        {
+            "id": "logs",
+            "label": "Logs",
+            "icon": "📜",
+            "settings": {
+                "logs_enabled": { "label": "Enable Logs", "type": "toggle", "enabled": true, "value": true },
+                "logs_channel": { "label": "Logs Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "log_mod_actions": { "label": "Moderation Actions", "type": "toggle", "enabled": true, "value": true },
+                "log_mod_actions_channel": { "label": "Moderation Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "log_message_delete": { "label": "Message Delete", "type": "toggle", "enabled": true, "value": true },
+                "log_message_delete_channel": { "label": "Message Delete Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "log_message_edit": { "label": "Message Edit", "type": "toggle", "enabled": true, "value": true },
+                "log_message_edit_channel": { "label": "Message Edit Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "log_member_join_leave": { "label": "Member Join/Leave", "type": "toggle", "enabled": true, "value": true },
+                "log_member_join_leave_channel": { "label": "Member Join/Leave Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "log_server_updates": { "label": "Server Updates", "type": "toggle", "enabled": true, "value": true },
+                "log_server_updates_channel": { "label": "Server Updates Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "log_role_updates": { "label": "Role Updates", "type": "toggle", "enabled": true, "value": true },
+                "log_role_updates_channel": { "label": "Role Updates Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "log_channel_updates": { "label": "Channel Updates", "type": "toggle", "enabled": true, "value": true },
+                "log_channel_updates_channel": { "label": "Channel Updates Channel", "type": "select_channel", "enabled": true, "value": "" }
+            }
+        },
+        {
+            "id": "security",
+            "label": "Security",
+            "icon": "🛡️",
+            "settings": {
+                "security_enabled": { "label": "Enable Security System", "type": "toggle", "enabled": true, "value": false },
+                "security_command": { "label": "Security Command", "type": "modal", "enabled": true, "value": "security", "allowedRoles": [], "allowedChannels": [], "shortcuts": ["protect"] },
+                "security_window_sec": { "label": "Window Seconds", "type": "text", "enabled": true, "value": "60" },
+                "security_punishment": { "label": "Punishment (ban/kick/timeout/remove_roles)", "type": "text", "enabled": true, "value": "ban" },
+                "security_owner_exempt": { "label": "Owner Exempt From Security", "type": "toggle", "enabled": true, "value": false },
+                "security_whitelist_users": { "label": "Global Whitelist Users IDs (comma)", "type": "text", "enabled": true, "value": "" },
+                "security_whitelist_roles": { "label": "Global Whitelist Roles IDs (comma)", "type": "text", "enabled": true, "value": "" },
+                "security_ban_protection": { "label": "Protect From Mass Ban", "type": "toggle", "enabled": true, "value": true },
+                "security_ban_control": { "label": "Ban Protection Settings", "type": "modal", "enabled": true, "value": "ban-protect", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] },
+                "security_ban_max": { "label": "Ban Max In Window", "type": "text", "enabled": true, "value": "4" },
+                "security_ban_action": { "label": "Ban Overflow Action", "type": "text", "enabled": true, "value": "ban" },
+                "security_ban_whitelist_users": { "label": "Ban Whitelist Users IDs", "type": "text", "enabled": true, "value": "" },
+                "security_ban_whitelist_roles": { "label": "Ban Whitelist Roles IDs", "type": "text", "enabled": true, "value": "" },
+                "security_kick_protection": { "label": "Protect From Mass Kick", "type": "toggle", "enabled": true, "value": true },
+                "security_kick_max": { "label": "Kick Max In Window", "type": "text", "enabled": true, "value": "4" },
+                "security_kick_action": { "label": "Kick Overflow Action", "type": "text", "enabled": true, "value": "ban" },
+                "security_kick_whitelist_users": { "label": "Kick Whitelist Users IDs", "type": "text", "enabled": true, "value": "" },
+                "security_kick_whitelist_roles": { "label": "Kick Whitelist Roles IDs", "type": "text", "enabled": true, "value": "" },
+                "security_channel_delete_protection": { "label": "Protect Channel Delete", "type": "toggle", "enabled": true, "value": true },
+                "security_channel_delete_max": { "label": "Channel Delete Max", "type": "text", "enabled": true, "value": "4" },
+                "security_channel_delete_action": { "label": "Channel Delete Overflow Action", "type": "text", "enabled": true, "value": "ban" },
+                "security_channel_delete_whitelist_users": { "label": "Channel Delete Whitelist Users IDs", "type": "text", "enabled": true, "value": "" },
+                "security_channel_delete_whitelist_roles": { "label": "Channel Delete Whitelist Roles IDs", "type": "text", "enabled": true, "value": "" },
+                "security_channel_create_protection": { "label": "Protect Channel Create", "type": "toggle", "enabled": true, "value": true },
+                "security_channel_create_max": { "label": "Channel Create Max", "type": "text", "enabled": true, "value": "4" },
+                "security_channel_create_action": { "label": "Channel Create Overflow Action", "type": "text", "enabled": true, "value": "ban" },
+                "security_channel_create_whitelist_users": { "label": "Channel Create Whitelist Users IDs", "type": "text", "enabled": true, "value": "" },
+                "security_channel_create_whitelist_roles": { "label": "Channel Create Whitelist Roles IDs", "type": "text", "enabled": true, "value": "" },
+                "security_role_delete_protection": { "label": "Protect Role Delete", "type": "toggle", "enabled": true, "value": true },
+                "security_role_delete_max": { "label": "Role Delete Max", "type": "text", "enabled": true, "value": "4" },
+                "security_role_delete_action": { "label": "Role Delete Overflow Action", "type": "text", "enabled": true, "value": "ban" },
+                "security_role_delete_whitelist_users": { "label": "Role Delete Whitelist Users IDs", "type": "text", "enabled": true, "value": "" },
+                "security_role_delete_whitelist_roles": { "label": "Role Delete Whitelist Roles IDs", "type": "text", "enabled": true, "value": "" },
+                "security_role_create_protection": { "label": "Protect Role Create", "type": "toggle", "enabled": true, "value": true },
+                "security_role_create_max": { "label": "Role Create Max", "type": "text", "enabled": true, "value": "4" },
+                "security_role_create_action": { "label": "Role Create Overflow Action", "type": "text", "enabled": true, "value": "ban" },
+                "security_role_create_whitelist_users": { "label": "Role Create Whitelist Users IDs", "type": "text", "enabled": true, "value": "" },
+                "security_role_create_whitelist_roles": { "label": "Role Create Whitelist Roles IDs", "type": "text", "enabled": true, "value": "" }
+            }
+        },
+        {
+            "id": "ai_agent",
+            "label": "AI Agent",
+            "icon": "🧠",
+            "settings": {
+                "ai_agent_enabled": { "label": "Enable AI Agent", "type": "toggle", "enabled": true, "value": false },
+                "ai_agent_channel": { "label": "AI Agent Channel", "type": "select_channel", "enabled": true, "value": "" },
+                "ai_agent_model": { "label": "AI Model", "type": "text", "enabled": true, "value": "gpt-4o-mini" },
+                "ai_system_prompt": { "label": "AI System Prompt", "type": "text", "enabled": true, "value": "You are an advanced AI assistant for Discord. Think naturally, understand Arabic and English, keep conversation context, and answer helpfully. Only use structured action JSON internally when execution is required." },
+                "ai_agent_allow_actions": { "label": "Allow Real Actions", "type": "toggle", "enabled": true, "value": true },
+                "ai_agent_max_actions": { "label": "Max Actions Per Request", "type": "text", "enabled": true, "value": "4" },
+                "ai_agent_control": { "label": "AI Controller Access", "type": "modal", "enabled": true, "value": "aiagent", "allowedRoles": [], "allowedChannels": [], "shortcuts": [] }
+            }
+        }
+    ]
+}

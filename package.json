@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@discordjs/opus": "^0.10.0",
+    "@discordjs/voice": "^0.18.0",
+    "discord.js": "^14.23.2",
+    "libsodium-wrappers": "^0.8.2"
+  }
+}
